@@ -1,4 +1,5 @@
 import { useFonts } from 'expo-font';
+import { useEffect } from 'react';
 
 export default function useAssets() {
   const [loaded, error] = useFonts({
@@ -10,6 +11,10 @@ export default function useAssets() {
     'Roboto-Black': require('../assets/fonts/Roboto-Black.ttf'),
     'Roboto-Ultra': require('../assets/fonts/Roboto-Black.ttf'),
   });
+
+  useEffect(() => {
+    if (error) throw error;
+  }, [error]);
 
   return { loaded, error };
 }

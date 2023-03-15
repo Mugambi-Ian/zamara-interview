@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-nativewind-eslint",
-    "slug": "expo-nativewind-eslint",
+    "name": "zamara-interview",
+    "slug": "zamara-interview",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
